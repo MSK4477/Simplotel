@@ -1,0 +1,251 @@
+ body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.grid-container, .t {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5vmax;
+
+  }
+  .grid-container {
+    background: linear-gradient(to right, #fff2b2, #fab6e4);
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+}
+
+.item2 {
+    grid-row: span 3;
+    width: 200px;
+    height: 400px;
+}
+.item3 img { 
+    height: 180px;
+    width: 180px;
+}
+.item1 img { 
+    height: 180px;
+    width: 180px;
+}
+.item2 img { 
+    height: 400px;
+    width: 200px;
+}
+
+.item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    }
+    .items{ 
+        width:90%; 
+    background-color: #ff7171;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+.grid-container img {
+    width: 200px;
+}
+
+  
+.text{
+    padding-left: 10px;
+    }
+    .text2  { 
+        font-size: 25px;
+        letter-spacing: 7px;
+    font-weight: bold;
+    }
+  
+ 
+  
+
+  .header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff7171;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#menu {
+    display: none;
+    width: 25px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #fff2b2, #fab6e4);
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+h1 {
+    letter-spacing: 4px;
+}
+
+.txt {
+    width: 83%;
+    line-height: 2;
+}
+
+#image1 {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.button1,
+h1,
+.txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 60px;
+}
+
+
+.button1 {
+    background-color: #ff7171;
+    outline: none;
+    border: none;
+    padding: 10px 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+@media screen and (max-width:900px) { 
+    .grid-container { 
+        display: flex !important;
+        flex-direction: column !important;
+    }
+  
+}
+@media screen and (max-width:855px) {
+    .body { 
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        position: relative;
+        top: 337px;
+    } 
+
+    .grid-container { 
+
+        position: relative;
+        top: 337px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+   
+   
+
+}
+
+@media screen and (max-width:986px) {
+
+   
+.text{
+    padding-left: 10px;
+    }
+    .text2  { 
+        font-size: 17px;
+        letter-spacing: 3px;
+    font-weight: bold;
+    }
+}
+@media screen and (max-width:542px) {
+
+    .grid-container, .t{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+     .item2 .item1 .item3 img { 
+        width: 180px !important ;
+        height: 180px !important;
+    }
+
+}
+
+@media screen and (max-width:883px) {
+.header h3 { 
+font-size: 20px;
+}
+.header { 
+    gap: 30px;
+
+}
+
+
+
+}
+@media screen and (max-width:651px) {
+    .header h3 { 
+       display: none;
+        }
+        #menu{
+            display: block;
+            position: absolute;
+            right: 3%;
+            top: 26%;
+            }
+
+}
+.toogle-menu { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color:rgb(255, 113, 113, 0.9);
+    z-index: 200000;
+}
+ul, li{ 
+    list-style: none;
+   
+}
+li { 
+    margin-bottom: 30px;
+    margin-top: 18px;
+}
+a { 
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:450px) { 
+    .toogle-menu { 
+        width: 100% !important;
+    }
+}
