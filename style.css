@@ -229,7 +229,7 @@ font-size: 20px;
     display: none;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color:rgb(255, 113, 113, 0.9);
+    background-color:rgb(255, 113, 113, 1);
     z-index: 200000;
 }
 ul, li{ 
